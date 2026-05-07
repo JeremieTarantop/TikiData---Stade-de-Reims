@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="Inter, system-ui, -apple-system, sans-serif">
+  <defs>
+    <linearGradient id="lowGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a3a5c"/>
+      <stop offset="100%" stop-color="#0f2438"/>
+    </linearGradient>
+    <linearGradient id="midGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3d6b8c"/>
+      <stop offset="100%" stop-color="#2a4a63"/>
+    </linearGradient>
+    <linearGradient id="highGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#cc1f2f"/>
+      <stop offset="100%" stop-color="#9f1320"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" font-size="20" font-weight="700" fill="#1a1a1d">Recovery zones: how we split the pitch</text>
+  <text x="400" y="58" text-anchor="middle" font-size="13" fill="#666">First cut of the data, before any clustering</text>
+
+  <!-- Pitch background -->
+  <rect x="100" y="90" width="600" height="350" fill="#1d6b3a" stroke="#fff" stroke-width="2"/>
+
+  <!-- Recovery zones (semi-transparent overlays) -->
+  <rect x="100" y="90" width="200" height="350" fill="url(#lowGrad)" opacity="0.55"/>
+  <rect x="300" y="90" width="200" height="350" fill="url(#midGrad)" opacity="0.55"/>
+  <rect x="500" y="90" width="200" height="350" fill="url(#highGrad)" opacity="0.55"/>
+
+  <!-- Pitch markings -->
+  <line x1="400" y1="90" x2="400" y2="440" stroke="#fff" stroke-width="2" opacity="0.7"/>
+  <circle cx="400" cy="265" r="50" fill="none" stroke="#fff" stroke-width="2" opacity="0.7"/>
+  <circle cx="400" cy="265" r="3" fill="#fff" opacity="0.7"/>
+  <rect x="100" y="180" width="60" height="170" fill="none" stroke="#fff" stroke-width="2" opacity="0.7"/>
+  <rect x="640" y="180" width="60" height="170" fill="none" stroke="#fff" stroke-width="2" opacity="0.7"/>
+
+  <!-- Direction of attack arrow -->
+  <line x1="120" y1="465" x2="680" y2="465" stroke="#1a1a1d" stroke-width="2" marker-end="url(#arrow)"/>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#1a1a1d"/>
+    </marker>
+  </defs>
+  <text x="400" y="487" text-anchor="middle" font-size="12" fill="#1a1a1d" font-weight="600">Direction of attack</text>
+
+  <!-- Zone labels -->
+  <text x="200" y="130" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">LOW RECOVERY</text>
+  <text x="200" y="150" text-anchor="middle" font-size="11" fill="#fff" opacity="0.85">Defensive third</text>
+  <text x="200" y="420" text-anchor="middle" font-size="11" fill="#fff" opacity="0.85">long, vertical, fast</text>
+
+  <text x="400" y="130" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">MID RECOVERY</text>
+  <text x="400" y="150" text-anchor="middle" font-size="11" fill="#fff" opacity="0.85">Middle third</text>
+  <text x="400" y="420" text-anchor="middle" font-size="11" fill="#fff" opacity="0.85">balanced patterns</text>
+
+  <text x="600" y="130" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">HIGH RECOVERY</text>
+  <text x="600" y="150" text-anchor="middle" font-size="11" fill="#fff" opacity="0.85">Attacking third</text>
+  <text x="600" y="420" text-anchor="middle" font-size="11" fill="#fff" opacity="0.85">short, immediate threat</text>
+</svg>

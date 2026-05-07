@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 400" font-family="Inter, system-ui, -apple-system, sans-serif">
+  <defs>
+    <marker id="arr2" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#cc1f2f"/>
+    </marker>
+  </defs>
+
+  <text x="350" y="35" text-anchor="middle" font-size="20" font-weight="700" fill="#1a1a1d">The loop that defined the project</text>
+  <text x="350" y="58" text-anchor="middle" font-size="13" fill="#666">Iterative refinement with club analysts</text>
+
+  <!-- Four nodes in a cycle -->
+  <g>
+    <!-- Top: Engineer features -->
+    <circle cx="350" cy="130" r="55" fill="#fff5f6" stroke="#cc1f2f" stroke-width="2"/>
+    <text x="350" y="125" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1a1d">Engineer</text>
+    <text x="350" y="143" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1a1d">features</text>
+
+    <!-- Right: Cluster -->
+    <circle cx="540" cy="240" r="55" fill="#fff5f6" stroke="#cc1f2f" stroke-width="2"/>
+    <text x="540" y="245" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1a1d">Cluster plays</text>
+
+    <!-- Bottom: Watch video -->
+    <circle cx="350" cy="320" r="55" fill="#fff5f6" stroke="#cc1f2f" stroke-width="2"/>
+    <text x="350" y="315" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1a1d">Review with</text>
+    <text x="350" y="333" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1a1d">analysts</text>
+
+    <!-- Left: Refine -->
+    <circle cx="160" cy="240" r="55" fill="#fff5f6" stroke="#cc1f2f" stroke-width="2"/>
+    <text x="160" y="235" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1a1d">Refine</text>
+    <text x="160" y="253" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1a1d">representation</text>
+  </g>
+
+  <!-- Curved arrows between them -->
+  <path d="M 400 150 Q 510 170 510 200" fill="none" stroke="#cc1f2f" stroke-width="2" marker-end="url(#arr2)"/>
+  <path d="M 510 280 Q 510 320 410 320" fill="none" stroke="#cc1f2f" stroke-width="2" marker-end="url(#arr2)"/>
+  <path d="M 290 320 Q 190 320 190 280" fill="none" stroke="#cc1f2f" stroke-width="2" marker-end="url(#arr2)"/>
+  <path d="M 190 200 Q 190 170 290 150" fill="none" stroke="#cc1f2f" stroke-width="2" marker-end="url(#arr2)"/>
+
+  <!-- Center label -->
+  <text x="350" y="235" text-anchor="middle" font-size="11" fill="#888" font-weight="600" letter-spacing="1.5">WEEKLY</text>
+  <text x="350" y="252" text-anchor="middle" font-size="11" fill="#888" font-weight="600" letter-spacing="1.5">CADENCE</text>
+</svg>

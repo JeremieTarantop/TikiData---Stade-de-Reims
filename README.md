@@ -23,7 +23,7 @@ Counter attacks have huge tactical value and high variability, but they were sti
 * **Tracking data** — player XY positions and ball XYZ positions, captured 25 times per second (roughly 150,000 rows per match)
 * **Event data** — passes, runs, dribbles, timestamps, phase boundaries
 
-The core question: how do you turn noisy multi source data into recurring patterns that coaches can actually use?
+The core question: how do you turn noisy data into recurring patterns that coaches can use?
 
 ---
 
@@ -31,7 +31,7 @@ The core question: how do you turn noisy multi source data into recurring patter
 
 ![Pipeline](figures/pipeline.svg)
 
-The workflow was iterative. We engineered features, clustered the plays with K-means, watched the videos, discussed the outputs with club analysts, then went back and refined the representation. That loop *was* the project.
+The workflow was iterative. We engineered features, clustered the plays with K-means, watched the videos, discussed the outputs with club analysts, then went back and refined the representation. That loop was key in this project.
 
 ![Iteration loop](figures/iteration_loop.svg)
 
@@ -117,15 +117,12 @@ Once the model was trustworthy, the club used it for two things.
 
 * **Build for portability from day one.** Our pipeline was tailored to Stade de Reims' data setup. Onboarding a second club would have required real rework. If I started over, I would license the data myself and design every feature to be club agnostic.
 * **Productize earlier.** We delivered weekly reports manually. A lighter cadence, better tooling, and a real interface for the analysts would have multiplied the impact at the same effort.
-* **Define a real evaluation metric for clustering.** One of our limitations was the lack of a clean metric to assess clustering quality. We relied heavily on expert validation, which works but does not scale. A more principled evaluation framework upfront would have saved iterations.
 
 ---
 
 ## Why this project matters to me
 
 I did not wait for this opportunity. We had an idea, pitched it cold to multiple clubs, got the meetings, sold the vision, and turned it into a paid year long collaboration with a Ligue 1 team.
-
-The best part was watching the work actually get used. Analysts running our outputs, the head coach discussing them in match prep. That is when it stopped feeling like a school project.
 
 It also closed a personal loop: connecting a sport I have loved my whole life with the technical work I want to keep building on.
 
@@ -137,7 +134,7 @@ This was a paid engagement under NDA, so the codebase and the underlying data ar
 
 **Reference:** *StratAlign: Uncovering Tactical Patterns through Large Scale Event Sequence Matching*, StatsBomb 2023. [link](https://statsbomb.com/wp-content/uploads/2023/10/Ahmed_El-Roby-2.pdf)
 
-**Contributors:** Jérémie Taranto, Idris Houir Alami, Aymen Marzak, Alexis Giudicissi, Ghali Harouchi.
+**Contributors:** Jérémie Taranto, Idris Houir Alami, Alexis Giudicissi, Ghali Harouchi, Aymen Marzak.
 
 ---
 
